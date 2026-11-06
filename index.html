@@ -853,11 +853,11 @@
              <div class="absolute -top-4 left-6 sm:left-8 w-1.5 h-6 bg-slate-400 rounded-full shadow-sm"></div>
              <div class="absolute -top-4 right-6 sm:right-8 w-1.5 h-6 bg-slate-400 rounded-full shadow-sm"></div>
              <div class="bg-gradient-to-b from-amber-700 to-amber-900 p-1.5 sm:p-2 rounded-2xl shadow-[0_10px_20px_rgba(0,0,0,0.6)] border-b-4 border-amber-950 border-x-2 border-amber-800">
-                <div class="bg-gradient-to-b from-amber-100 to-amber-50 rounded-xl px-4 sm:px-6 py-2 border-2 border-amber-800/50 border-dashed relative overflow-hidden">
-                  <div class="absolute inset-0 bg-white/20"></div>
-                  <h1 class="text-xl sm:text-3xl md:text-4xl mt-1 flex flex-col items-center relative z-10" style="font-family: 'Lilita One', cursive; letter-spacing: 1px;">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-red-500 to-red-700 block transform -rotate-1 drop-shadow-md px-1 pb-1 pt-1" style="-webkit-text-stroke: 2px white; paint-order: stroke fill; line-height: 1.2">PASAR MINI</span>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 to-orange-500 block transform rotate-1 text-3xl sm:text-5xl md:text-6xl mt-1 truncate max-w-[180px] sm:max-w-[260px] drop-shadow-lg px-2 pb-1 pt-2" style="-webkit-text-stroke: 3px white; paint-order: stroke fill; line-height: 1.2" id="display-name">${state.playerName || 'BIJAK'}</span>
+                <div class="bg-gradient-to-b from-slate-100 to-slate-300 rounded-xl px-4 sm:px-6 py-2 border-2 border-slate-400/50 border-dashed relative overflow-hidden">
+                  <div class="absolute inset-0 bg-white/40"></div>
+                  <h1 class="text-xl sm:text-3xl md:text-4xl mt-1 flex flex-col items-center relative z-10" style="font-family: 'Fredoka', sans-serif; letter-spacing: 1px;">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-red-700 to-red-950 block transform -rotate-1 drop-shadow-md px-1 pb-1 pt-1" style="-webkit-text-stroke: 2px white; paint-order: stroke fill; line-height: 1.1">PASAR MINI</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-red-700 to-red-950 block transform rotate-1 text-3xl sm:text-5xl md:text-6xl mt-1 truncate max-w-[180px] sm:max-w-[260px] drop-shadow-lg px-2 pb-1 pt-2" style="-webkit-text-stroke: 2px white; paint-order: stroke fill; line-height: 1.1" id="display-name">${state.playerName || 'BIJAK'}</span>
                   </h1>
                 </div>
              </div>
@@ -1346,7 +1346,7 @@
           </div>
 
           ${mission.level === '3B' ? `
-             <div class="absolute bottom-[130px] right-4 z-40 flex flex-col items-end">
+             <div class="absolute bottom-[90px] right-4 z-40 flex flex-col items-end">
                <div class="bg-sky-100 text-sky-800 text-[10px] font-bold px-2 py-1 rounded shadow-sm border border-sky-300 mb-1 animate-pulse text-center max-w-[120px] leading-tight">
                  Sila tekan SELESAI bila jawapan betul
                </div>
@@ -1368,7 +1368,7 @@
           ` : ''}
 
           ${(mission.level === '2A' || mission.level === '3A' || mission.level === '3B' || mission.level === '2B') ? `
-             <div class="absolute bottom-4 right-4 z-30 flex flex-col items-center">
+             <div class="absolute bottom-1 right-4 z-30 flex flex-col items-center">
                 <div class="relative pointer-events-none">
                    ${BasketSVG(85)}
                    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-0">
@@ -1379,7 +1379,6 @@
                       `).join('')}
                    </div>
                 </div>
-                <span class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-black text-orange-600 shadow border border-orange-200 mt-1 uppercase">Bakul Anda</span>
              </div>
           ` : ''}
 
